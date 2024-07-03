@@ -4,10 +4,10 @@ import { useEffect } from 'react'
 
 export default function RootLayout() {
   const [loaded] = useFonts({
-    Poppins: require('../assets/fonts/Poppins-Regular.ttf'),
-    PoppinsLight: require('../assets/fonts/Poppins-Light.ttf'),
-    PoppinsSemiBold: require('../assets/fonts/Poppins-SemiBold.ttf'),
-    PoppinsExtraBold: require('../assets/fonts/Poppins-ExtraBold.ttf')
+    Poppins: require('../../assets/fonts/Poppins-Regular.ttf'),
+    PoppinsLight: require('../../assets/fonts/Poppins-Light.ttf'),
+    PoppinsSemiBold: require('../../assets/fonts/Poppins-SemiBold.ttf'),
+    PoppinsExtraBold: require('../../assets/fonts/Poppins-ExtraBold.ttf')
   })
 
   useEffect(() => {
@@ -23,6 +23,7 @@ export default function RootLayout() {
   return (
     <Stack>
       <Stack.Screen name="index" options={{ headerShown: false }} />
+      <Stack.Screen name="addpoints" options={{ headerShown: false }} />
     </Stack>
   )
 }
